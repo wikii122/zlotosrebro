@@ -1,0 +1,30 @@
+@font-face {
+    font-family: Libertine;
+    src: url("/fonts/LinLibertine_aS.ttf");
+}
+body {
+    background-attachment: fixed;
+    background-image: url("/img/background300dpi.png");
+    border: 0;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background: #fff;
+    max-width: 800px;
+    margin: auto;
+}
+
+.text {
+    text-align: center;
+}
+
+header {
+   font-family: Libertine; 
+}
+
+#title {
+    font-size: xx-large;
+}
