@@ -2,6 +2,12 @@
     font-family: Libertine;
     src: url("/fonts/LinLibertine_aS.ttf");
 }
+
+@font-face {
+    font-family: Garamond;
+    src: url("../fonts/LinLibertine_R.ttf");
+}
+
 body {
     background-attachment: fixed;
     background-image: url("/img/background300dpi.png");
@@ -11,8 +17,31 @@ body {
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 header, nav {
-   font-family: Libertine; 
+   font-family: Libertine;
+}
+
+li {
+    list-style: none;
+}
+
+nav {
+    background: #c1ad8b;
+    color: #fff;
+}
+
+nav a {
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+nav ul {
+   padding-top: 25px;
+   padding-bottom: 25px;
 }
 
 hr {
@@ -29,7 +58,7 @@ hr {
 
 ul {
     padding: 0;
-    margin: 10px;
+    margin: 0;
 }
 
 .container {
@@ -49,23 +78,39 @@ ul {
 }
 
 .subtitle {
+    color: #c1ad8b;
     display: inline;
     padding: 0;
 }
 
-.subtitle li {
-    color: #c1ad8b;
+.subtitle ul {
+    margin: 10px;
+}
+
+.subtitle li, nav li {
     display: inline;
     font-size: medium;
-    list-style: disc;
     padding-right: 15px;
 }
 
 .display {
-    padding: 0;
+    margin: 0;
     margin-top: 20px;
+    padding: 0;
 }
 
 .display img {
     width: 100%;
+}
+
+.content {
+    color: #826d44;
+    font-family: Garamond;
+    margin: 15px;
+    padding: 10px;
+}
+
+.flat {
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
