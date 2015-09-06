@@ -11,20 +11,61 @@ body {
     padding: 0;
 }
 
+header, nav {
+   font-family: Libertine; 
+}
+
+hr {
+    background: url("/img/header300dpi.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 0;
+    height: 0;
+    margin: -10px;
+    padding: 10px;
+
+}
+
+ul {
+    padding: 0;
+    margin: 10px;
+}
+
 .container {
     background: #fff;
     max-width: 800px;
     margin: auto;
+    padding-top: 30px;
 }
 
 .text {
     text-align: center;
 }
 
-header {
-   font-family: Libertine; 
+.title {
+    color: #ba9f61;
+    font-size: xx-large;
 }
 
-#title {
-    font-size: xx-large;
+.subtitle {
+    display: inline;
+    padding: 0;
+}
+
+.subtitle li {
+    color: #c1ad8b;
+    display: inline;
+    font-size: medium;
+    list-style: disc;
+    padding-right: 15px;
+}
+
+.display {
+    padding: 0;
+    margin-top: 20px;
+}
+
+.display img {
+    width: 100%;
 }
