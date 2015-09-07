@@ -143,10 +143,20 @@ ul {
     text-align: left;
 }
 
+.listed p {
+    padding-left: 40px; 
+}
+
 .aligned {
-    float:right;
-    width:10%;
-    margin-left:10px;
+    float: right;
+    width: 20%;
+    margin-left: 10px;
+}
+
+.special {
+    float: right;
+    width: 50%;
+    text-align: right;
 }
 
 .flex-container {
@@ -158,6 +168,10 @@ ul {
     font-size: large;
     min-width: 160px;
     padding: 30px;
+}
+
+.constant-width {
+    width: 65%;
 }
 
 #map {
