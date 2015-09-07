@@ -6,6 +6,8 @@
 
     <link rel="stylesheet" type="text/css" href="styles/normalize.css">
     <link rel="stylesheet" type="text/css" href="styles/main.css">
+
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
 </head>
 <body>
     <div class="container">
@@ -47,26 +49,56 @@
         </nav>
 
         <section>
-            <div class="text content">
-                <p class="flat">Pracownia nasza zajmuje się naprawą i sprzedażą biżuterii złotej i srebrnej.</p>
-                <div>Wykonujemy naprawy wyrobów jubilerskich takie jak:
-                    <ul>
-                        <li>lutowanie łańcuszków,</li>
-                        <li>oprawianie kamieni szlachetnych,</li>
-                        <li>powiększanie i zmniejszanie pierścionków,</li>
-                        <li>powiększanie i zmniejszanie obrączek,</li>
-                        <li>powiększanie i zmniejszanie sygnetów,</li>
-                        <li>naprawa biżuterii,</li>
-                        <li>renowacja biżuterii i inne.</li>
-                    </ul>
+            <div class="content flex-container">
+                <div class="card">
+                    Informacje<br>
+                    kontaktowe
                 </div>
 
-                <p>Na życzenie wykonujemy wyroby ze złota według Państwa lub naszego indywidualnego projektu.</p>
+                <div class="card">
+                    Pracownia Jubilerska<br>
+                    Przemysław Ślęczka
+                </div>
 
-                <p>Serdecznie zapraszamy do naszej pracowni - Warszawa, ul. Abrahama 2. </p>
-                <p>Godziny otwarcia: 13-18, sobota 10-13.</p>
+                <div class="card">
+                    ul. Abrahama 2/25<br>
+                    03-982 Warszawa
+                </div>
+
+                <div class="card">
+                    Telefon<br>
+                    793252233
+                </div>
+
+                <div class="card">
+                    Email<br>
+                    <a href="mailto:pracownia.jubilerska@gmail.com"> pracownia.jubilerska@gmail.com</a>
+                </div>
+
+            </div>
+            <div class="content text">
+                <div>Jak do nas trafić</div>
+                <div id="map"></div>
             </div>
         </section>
+
+        <script>
+            function initialize() {
+                var mapCanvas = document.getElementById('map');
+                var mapOptions = {
+                  center: new google.maps.LatLng(52.2272148, 21.0844792),
+                  zoom: 18,
+                  mapTypeId: google.maps.MapTypeId.ROADMAP
+                }
+                var map = new google.maps.Map(mapCanvas, mapOptions);
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(52.2268148, 21.0843592),
+                    icon: "https://maps.google.com/mapfiles/kml/shapes/poi.png",
+                    map: map
+                  });
+              }
+            google.maps.event.addDomListener(window, 'load', initialize);
+        </script>
 
         <footer>
             <div class="hidden">Projekt: Patrycja Marciniak</div>
