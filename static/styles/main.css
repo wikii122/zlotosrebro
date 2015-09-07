@@ -10,7 +10,7 @@
 
 body {
     background-attachment: fixed;
-    background-image: url("/img/background300dpi.png");
+    background-image: url("/img/background.png");
     border: 0;
     height: 100%;
     margin: 0;
@@ -63,7 +63,7 @@ nav ul {
 }
 
 hr {
-    background: url("/img/header300dpi.png");
+    background: url("/img/header.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
