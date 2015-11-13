@@ -31,6 +31,10 @@ a:hover, a:focus {
     text-shadow: -1px 1px 10px #ffc, 1px -1px 10px #fff;
 }
 
+a.maill::after {
+    content: "\0040" attr(data-domain);
+}
+
 footer {
     bottom: 0;
     color: #d0cda4;
