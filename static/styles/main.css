@@ -31,7 +31,7 @@ a:hover, a:focus {
     text-shadow: -1px 1px 10px #ffc, 1px -1px 10px #fff;
 }
 
-a.maill::after {
+a.maill:after {
     content: "\0040" attr(data-domain);
 }
 
@@ -76,6 +76,20 @@ nav a {
 nav ul {
    padding-top: 25px;
    padding-bottom: 25px;
+}
+
+nav ul li:after {
+    content: "\00b7"; 
+    padding-left: 15px;
+}
+
+.subtitle ul li:after {
+    content: "\00b7"; 
+    padding-left: 20px;
+}
+
+ul li.nobullet:after { 
+    content: none; 
 }
 
 hr {
