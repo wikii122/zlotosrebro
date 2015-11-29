@@ -47,14 +47,11 @@ footer {
     text-align: right;
 }
 
-footer > .hidden {
-    color: #fff;
-}
-
 header {
     padding-top: 30px;
 
 }
+
 header, nav {
    font-family: Libertine;
 }
@@ -212,3 +209,19 @@ ul {
     width: 80%;
     height: 360px;
 }
+
+#cookie-warn {
+    color: #fff;
+    font-family: Garamond;   
+    font-size: small;
+    background: #c1ad8b;
+    padding: 2px;
+    padding-left: 12px;
+}
+ #cookie-warn a {
+     color: #fff;
+     text-align: right;
+ }
+ #cookie-warn a:hover {
+    text-shadow: -1px 1px 10px #ffc, 1px -1px 10px #aaa;
+ }
