@@ -1,0 +1,233 @@
+@font-face {
+  font-family: Libertine;
+  src: url("/fonts/LinLibertine_aS.ttf");
+}
+
+@font-face {
+  font-family: Garamond;
+  src: url("../fonts/LinLibertine_R.ttf");
+}
+
+html {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+body {
+  background-attachment: fixed;
+  background-image: url("/img/background.png");
+  border: 0;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.5s ease-in;
+}
+
+a:hover, a:focus {
+  text-shadow: -1px 1px 10px #ffc, 1px -1px 10px #fff;
+}
+
+a.maill:after {
+  content: "\0040" attr(data-domain);
+}
+
+footer {
+  bottom: 0;
+  color: #d0cda4;
+  font-size: xx-small;
+  padding: 0;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  right: 0;
+  position: absolute;
+  text-align: right;
+}
+
+header {
+  padding-top: 30px;
+
+}
+
+header, nav {
+  font-family: Libertine;
+}
+
+li {
+  list-style: none;
+}
+
+nav {
+  background: #c1ad8b;
+  color: #fff;
+}
+
+nav a {
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+nav ul {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+nav ul li:after {
+  content: "\00b7";
+  padding-left: 15px;
+}
+
+.subtitle ul li:after {
+  content: "\00b7";
+  padding-left: 20px;
+}
+
+ul li.nobullet:after {
+  content: none;
+}
+
+hr {
+  background: url("/img/header.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 0;
+  height: 0;
+  margin: -10px;
+  padding: 10px;
+}
+
+ul {
+  margin: 0;
+}
+
+.content ul {
+  padding: 0;
+}
+
+.container {
+  background: #fff;
+  box-shadow: 0 2px 5px #c1ad8b, 0 2px 5px #c2ad8b;
+  max-width: 800px;
+  margin: auto;
+  min-height: 100%;
+  position: relative;
+}
+
+.text {
+  text-align: center;
+}
+
+.title {
+  color: #ba9f61;
+  font-size: xx-large;
+}
+
+.subtitle {
+  color: #c1ad8b;
+  display: inline;
+  padding: 0;
+}
+
+.subtitle ul {
+  margin: 10px;
+}
+
+.subtitle li, nav li {
+  display: inline;
+  font-size: medium;
+  padding-right: 15px;
+}
+
+.display {
+  margin: 0;
+  margin-top: 20px;
+  padding: 0;
+}
+
+.display img {
+  width: 100%;
+}
+
+.content {
+  color: #826d44;
+  font-family: Garamond;
+  margin: 15px;
+  padding: 30px;
+  padding-bottom: 5em;
+}
+
+.content a {
+  color: inherit;
+}
+
+.flat {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.listed {
+  text-align: left;
+}
+
+.listed p {
+  padding-left: 40px;
+}
+
+.aligned {
+  float: right;
+  width: 20%;
+  margin-left: 10px;
+}
+
+.special {
+  float: right;
+  width: 50%;
+  text-align: right;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  font-size: large;
+  min-width: 160px;
+  padding: 30px;
+}
+
+.constant-width {
+  width: 65%;
+}
+
+#map {
+  margin: auto;
+  width: 80%;
+  height: 360px;
+}
+
+#cookie-warn {
+  color: #fff;
+  font-family: Garamond;
+  font-size: small;
+  background: #c1ad8b;
+  padding: 2px;
+  padding-left: 12px;
+}
+#cookie-warn a {
+  color: #fff;
+  text-align: right;
+}
+#cookie-warn a:hover {
+  text-shadow: -1px 1px 10px #ffc, 1px -1px 10px #aaa;
+}
+
+@media screen and (max-device-width: 480px) {
+  @import "mobile";
+}
+
+@import "../../node_modules/bulma/bulma.sass";

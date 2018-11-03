@@ -1,0 +1,27 @@
+{
+  "name": "zlotosrebro",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Wiktor Ślęczka <wikii122@gmail.com>",
+  "private": true,
+  "description": "Start package for Bulma",
+  "keywords": [
+    "sass",
+    "bulma",
+    "css",
+    "start"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "bulma": "^0.6.0"
+  },
+  "devDependencies": {
+    "http-server": "^0.11.1",
+    "node-sass": "^4.5.3"
+  },
+  "scripts": {
+    "build": "node-sass --output-style expanded static/styles/main.scss static/styles/main.css",
+    "dev": "yarn run build --watch",
+    "serve": "yarn run http-server static/"
+  }
+}

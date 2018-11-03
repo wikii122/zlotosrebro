@@ -1,9 +1,8 @@
-// Don't put trash in namespace
-void function() {
+void function () {
     function prepareWarning() {
         const name = "visited";
-        const str = '; '+ document.cookie +';';
-        const index = str.indexOf('; '+ escape(name) +'=');
+        const str = '; ' + document.cookie + ';';
+        const index = str.indexOf('; ' + escape(name) + '=');
 
         var warning = document.getElementById("cookie-warn");
 
@@ -16,7 +15,7 @@ void function() {
         }
 
         var expire = new Date();
-        expire.setTime((new Date()).getTime() + 3600000*24*365);
+        expire.setTime(new Date().getTime() + 3600000 * 24 * 365);
         document.cookie = name + "=1;expires=" + expire;
 
         warning.onclick = hideWarning;
