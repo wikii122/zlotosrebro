@@ -1,0 +1,53 @@
+{
+  "compilerOptions": {
+    "target": "es2018",
+    "module": "commonjs",
+    "strict": true,
+    "jsx": "preserve",
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "alwaysStrict": true,
+    "skipLibCheck": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "strictNullChecks": true,
+    "pretty": true,
+    "diagnostics": true,
+    "types": [
+      "node",
+      "mocha",
+      "chai",
+      "vue-typescript-import-dts"
+    ],
+    "baseUrl": "./",
+    "paths": {
+      "src/*": ["src/*"],
+      "assets/*": ["assets/*"]
+    },
+    "lib": [
+      "dom",
+      "es2018",
+      "dom.iterable",
+      "scripthost"
+    ]
+  },
+  "include": [
+    "src/**/*.js",
+    "src/**/*.jsx",
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "tests/**/*.js",
+    "tests/**/*.jsx",
+    "tests/**/*.ts",
+    "tests/**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

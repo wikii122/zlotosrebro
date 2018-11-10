@@ -4,7 +4,7 @@
   "main": "index.js",
   "author": "Wiktor Ślęczka <wikii122@gmail.com>",
   "private": true,
-  "description": "Start package for Bulma",
+  "description": "Website",
   "keywords": [
     "sass",
     "bulma",
@@ -16,6 +16,10 @@
     "bulma": "^0.6.0"
   },
   "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0",
+    "gulp-cli": "^2.0.1",
+    "gulp-sass": "^4.0.2",
     "http-server": "^0.11.1",
     "node-sass": "^4.5.3"
   },
