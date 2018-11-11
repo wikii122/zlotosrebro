@@ -20,7 +20,6 @@ body {
   background-attachment: fixed;
   background-image: url("/img/background.png");
   border: 0;
-  height: 100%;
   margin: 0;
   padding: 0;
 }
@@ -36,4 +35,13 @@ a:hover, a:focus {
 
 a.maill:after {
   content: "\0040" attr(data-domain);
+}
+
+header {
+  ul.is-narrow {
+    &:before, &:after {
+      content: " ";
+      flex-grow: 3;
+    }
+  }
 }
