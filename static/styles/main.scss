@@ -8,8 +8,18 @@
   src: url("../fonts/LinLibertine_R.ttf");
 }
 
-@import "../../node_modules/bulma/bulma.sass";
+@import "../../node_modules/reset.css/reset";
 
+$gold-light: #ba9f61;
+$gold-dark: #826d44;
+$primary: #c1ad8b;
+$info: $gold-dark;
+$title-color: $gold-light;
+$title-weight: 300;
+$subtitle-color: $gold-light;
+$link: white;
+
+@import "../../node_modules/bulma/bulma";
 
 html {
   height: 100%;
@@ -25,19 +35,22 @@ body {
 }
 
 a {
-  text-decoration: none;
-  transition: all 0.5s ease-in;
-}
-
-a:hover, a:focus {
-  text-shadow: -1px 1px 10px #ffc, 1px -1px 10px #fff;
-}
-
-a.maill:after {
+  &.maill:after {
   content: "\0040" attr(data-domain);
+  }
 }
 
 header {
+  font-family: Libertine;
+
+  a {
+    transition: all 0.5s ease-in;
+
+    &:hover, &:focus {
+      text-shadow: -1px 1px 10px #ffc, 1px -1px 10px #fff;
+    }
+  }
+
   ul.is-narrow {
     &:before, &:after {
       content: " ";

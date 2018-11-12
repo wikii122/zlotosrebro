@@ -4,10 +4,10 @@ void function() {
         const str = '; '+ document.cookie +';';
         const index = str.indexOf('; '+ escape(name) +'=');
 
-        var warning = document.getElementById("cookie-warn");
+        var warning = document.getElementById("cookie-warning");
 
         function hideWarning() {
-            warning.style.display = "none";
+            warning.classList.add("is-invisible")
         };
 
         if (!(index === -1 && navigator.cookieEnabled)) {

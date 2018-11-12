@@ -13,7 +13,8 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "bulma": "^0.6.0"
+    "bulma": "^0.7.2",
+    "reset.css": "^2.0.2"
   },
   "devDependencies": {
     "browser-sync": "^2.26.3",
@@ -24,8 +25,7 @@
     "node-sass": "^4.5.3"
   },
   "scripts": {
-    "build": "node-sass --output-style expanded static/styles/main.scss static/styles/main.css",
-    "dev": "yarn run build --watch",
-    "serve": "yarn run http-server static/"
+    "build": "yarn run gulp build",
+    "dev": "yarn run gulp dev"
   }
 }
