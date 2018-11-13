@@ -66,6 +66,22 @@ header {
     }
   }
 
+  hr {
+    background: url("/img/header.png");
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-size: auto auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 0;
+    height: 0;
+    margin: 0;
+    margin-top: -30px;
+    padding: 10px;
+  }
+
   img {
     width: 100%;
   }
