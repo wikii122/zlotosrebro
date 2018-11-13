@@ -4,20 +4,33 @@
 }
 
 @font-face {
-  font-family: Garamond;
-  src: url("../fonts/LinLibertine_R.ttf");
+  font-family: Garamond sans-serif;
+  src: url("../fonts/GARA.TTF");
 }
 
 @import "../../node_modules/reset.css/reset";
+@import "../../node_modules/bulma/sass/utilities/functions";
 
+$gold: #826d44;
 $gold-light: #ba9f61;
-$gold-dark: #826d44;
+
 $primary: #c1ad8b;
-$info: $gold-dark;
+
 $title-color: $gold-light;
 $title-weight: 300;
 $subtitle-color: $gold-light;
 $link: white;
+
+$family-primary: Libertine;
+$family-secondary: Garamond;
+$family-sans-serif: $family-secondary;
+
+$custom-colors: (
+  "gold": ($gold, findColorInvert($gold)),
+);
+
+$widescreen-enabled: false;
+$fullhd-enabled: false;
 
 @import "../../node_modules/bulma/bulma";
 
@@ -32,6 +45,8 @@ body {
   border: 0;
   margin: 0;
   padding: 0;
+
+  font-family: Garamond;
 }
 
 a {
@@ -49,6 +64,10 @@ header {
     &:hover, &:focus {
       text-shadow: -1px 1px 10px #ffc, 1px -1px 10px #fff;
     }
+  }
+
+  img {
+    width: 100%;
   }
 
   ul.is-narrow {
