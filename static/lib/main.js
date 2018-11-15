@@ -7,7 +7,7 @@ void function() {
         var warning = document.getElementById("cookie-warning");
 
         function hideWarning() {
-            warning.classList.add("is-invisible")
+            warning.classList.add("is-invisible");
         };
 
         if (!(index === -1 && navigator.cookieEnabled)) {

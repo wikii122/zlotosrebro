@@ -16,10 +16,11 @@ $gold-light: #ba9f61;
 
 $primary: #c1ad8b;
 
+$link: white;
+
 $title-color: $gold-light;
 $title-weight: 300;
 $subtitle-color: $gold-light;
-$link: white;
 
 $family-primary: Libertine;
 $family-secondary: Garamond;
@@ -28,9 +29,6 @@ $family-sans-serif: $family-secondary;
 $custom-colors: (
   "gold": ($gold, findColorInvert($gold)),
 );
-
-$widescreen-enabled: false;
-$fullhd-enabled: false;
 
 @import "../../node_modules/bulma/bulma";
 
@@ -79,7 +77,7 @@ header {
     height: 0;
     margin: 0;
     margin-top: -30px;
-    padding: 10px;
+    padding: 15px;
   }
 
   img {
@@ -92,4 +90,12 @@ header {
       flex-grow: 3;
     }
   }
+}
+
+p {
+  line-height: 2em;
+}
+
+#cookie-warning.is-invisible {
+  display: none;
 }
