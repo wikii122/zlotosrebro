@@ -1,121 +1,107 @@
 <!DOCTYPE html>
-<head>
-    <title>Pracownia Jubilerska Warszawa</title>
+<title>Pracownia Jubilerska Warszawa</title>
 
-    <meta charset="UTF-8">
-    <meta name="language" content="pl">
-    <meta name="description" content="Jubiler. Sprzedaż oraz naprawa bizuterii. W ofercie mamy biżuterię, obrączki ślubne, pierścionki zaręczynowe. Wykonujemy też wyroby na zamówienie.">
-    <meta name="keywords" content="jubiler,złoto,obrączki,pierścionki,biżuteria,łańcuszki,medaliki,naprawa biżuterii,srebro,pracownia jubilerska,Warszawa,Gocław">
-    <meta name="author" content="Wiktor Ślęczka">
-    <meta name="copyright" content="Pracownia Jubilerska Przemysław Śleczka">
+<meta charset="UTF-8">
+<meta name="language" content="pl">
+<meta name="robots" content="index, follow">
+<meta name="description" content="Jubiler. Sprzedaż oraz naprawa bizuterii. W ofercie mamy biżuterię, obrączki ślubne, pierścionki zaręczynowe. Wykonujemy też wyroby na zamówienie.">
+<meta name="keywords" content="jubiler,złoto,obrączki,pierścionki,biżuteria,łańcuszki,medaliki,naprawa biżuterii,srebro,pracownia jubilerska,Warszawa,Gocław">
+<meta name="author" content="Wiktor Ślęczka">
+<meta name="copyright" content="Pracownia Jubilerska Przemysław Śleczka">
 
-    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
-    <link rel="stylesheet" type="text/css" href="styles/main.css">
-    <link rel="stylesheet" type="text/css" href="styles/mobile.css" media="only screen and (max-device-width: 480px)"/>   
+<link rel="stylesheet" type="text/css" href="styles/main.css">
 
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
-    <script src="js/lib.js"></script>
-</head>
-<body>
-    <div class="container">
-        <section id="cookie-warn">
-            <p>Niniejsza strona wykorzystuje pliki cookies. 
-            Informacje uzyskane za pomocą cookies wykorzystywane są głównie 
-            w celach statystycznych. Pozostając na stronie godzisz się na 
-            ich zapisywanie w Twojej przeglądarce. 
-            <a href="javascript:void(0);" id="close-cookie-warn"
-            >Zamknij ostrzeżenie</a></p>
-        </section>
-        <header>
-            <div class="title text">Pracownia Jubilerska</div>
-            <hr />
-            <div class="subtitle text">
-                <ul>
-                    <li>Przemysław Ślęczka</li>
-                    <li>ul.&nbsp;Abrahama 2</li>
-                    <li class="nobullet">Warszawa</li>
-                </ul>
-            </div>
-        </header>
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script src="/lib/main.js"></script>
+<script src="/lib/map.js"></script>
 
-        <nav>
-            <div class="display">
-                <img src='img/photo.png' alt='' />
-            </div>
-            <ul class="text">
-                <li>
-                    <a href='/index.html'>Strona Główna</a>
-                </li>
-                <li>
-                    <a href='about.html'>O Nas</a>
-                </li>
-                <li>
-                    <a href='/prices.html'>Cennik</a>
-                </li>
-                <li class="nobullet">
-                    <a href="/contact.html">Kontakt</a>
-                </li>
-            </ul>
-        </nav>
+<div class="container has-background-white">
+  <div id="cookie-warning" class="notification has-text-centered is-size-6">
+    <p>Niniejsza strona wykorzystuje pliki cookies.
+      Informacje uzyskane za pomocą cookies wykorzystywane są głównie
+      w celach statystycznych. Pozostając na stronie godzisz się na
+      ich zapisywanie w Twojej przeglądarce.
+      <a href="javascript:void(0);" id="close-warning">Zamknij ostrzeżenie</a></p>
+  </div>
+  <div class="container">
+    <header class="container">
+      <div class="section is-family-primary">
+        <div class="level">
+          <h1 class="level-item title has-text-centered">Pracownia Jubilerska</h1>
+        </div>
+        <hr />
+        <ul class="subtitle level is-narrow">
+          <li class="level-item"><h2>Przemysław Ślęczka</h2></li>
+          <li class="level-item"><h2>ul.&nbsp;Abrahama 2</h2></li>
+          <li class="level-item"><h2>Warszawa</h2></li>
+        </ul>
+      </div>
 
-        <section>
-            <div class="content flex-container">
-                <div class="card">
-                    Informacje<br>
-                    kontaktowe
-                </div>
+      <nav class="has-background-primary">
+        <div class="display">
+          <img src='img/photo.png' alt='' />
+        </div>
+        <div class="section">
+          <ul class="level is-narrow is-family-primary is-size-5">
+            <li class="level-item">
+              <a href='index.html'>Strona Główna</a>
+            </li>
+            <li class="level-item">
+              <a href='about.html'>O Nas</a>
+            </li class="level-item">
+            <li class="level-item">
+              <a href='prices.html'>Cennik</a>
+            </li class="level-item">
+            <li class="level-item">
+              <a href="contact.html">Kontakt</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-                <div class="card">
-                    Pracownia Jubilerska<br>
-                    Przemysław Ślęczka
-                </div>
+    <section class="section">
+      <div class="has-text-gold">
+        <div class="card">
+          Informacje<br>
+          kontaktowe
+        </div>
 
-                <div class="card">
-                    ul. Abrahama 2/25<br>
-                    03-982 Warszawa
-                </div>
+        <div class="card">
+          Pracownia Jubilerska<br>
+          Przemysław Ślęczka
+        </div>
 
-                <div class="card">
-                    Telefon<br>
-                    793252233
-                </div>
+        <div class="card">
+          ul. Abrahama 2/25<br>
+          03-982 Warszawa
+        </div>
 
-                <div class="card">
-                    Email<br>
-                    <a class="maill" 
-                     href="mailto:pracowniaDOTjubilerskaATgmailDOTcom"
-                     onclick = "this.href=this.href.replace(/AT/,'&#64;').replace(/DOT/,'&#46;').replace(/DOT/,'&#46;')"
-                     data-domain="gmail.com">Pracownia.Jubilerska</a>
-                </div>
+        <div class="card">
+          Telefon<br>
+          793252233
+        </div>
 
-            </div>
-            <div class="content text">
-                <div>Jak do nas trafić</div>
-                <div id="map"></div>
-            </div>
-        </section>
+        <div class="card">
+          Email<br>
+          <a class="maill"
+            href="mailto:pracowniaDOTjubilerskaATgmailDOTcom"
+            onclick = "this.href=this.href.replace(/AT/,'&#64;').replace(/DOT/,'&#46;').replace(/DOT/,'&#46;')"
+            data-domain="gmail.com">Pracownia.Jubilerska</a>
+        </div>
 
-        <script>
-            function initialize() {
-                var mapCanvas = document.getElementById('map');
-                var mapOptions = {
-                  center: new google.maps.LatLng(52.2272148, 21.0844792),
-                  zoom: 18,
-                  mapTypeId: google.maps.MapTypeId.ROADMAP
-                }
-                var map = new google.maps.Map(mapCanvas, mapOptions);
-                var marker = new google.maps.Marker({
-                    position: new google.maps.LatLng(52.2268148, 21.0843592),
-                    icon: "https://maps.google.com/mapfiles/kml/shapes/poi.png",
-                    map: map
-                  });
-              }
-            google.maps.event.addDomListener(window, 'load', initialize);
-        </script>
+        <div class="content text">
+          <div>Jak do nas trafić</div>
+          <div id="map"></div>
+        </div>
+      </div>
+    </section>
 
-        <footer>
-            <div>Copyright &copy; 2015 Pracownia Jubilerska Przemysław Ślęczka</div>
-            <div>Realizacja Wiktor Ślęczka | Design Patrycja Marciniak</div>
-        </footer>
-    </div>
-</body>
+    <footer class="footer">
+      <div class="has-text-right">
+        <div>Copyright &copy; 2015 Pracownia Jubilerska Przemysław Ślęczka</div>
+        <div>Realizacja Wiktor Ślęczka | Design Patrycja Marciniak</div>
+      </div>
+    </footer>
+  </div>
+</div>
