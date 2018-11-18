@@ -17,7 +17,7 @@ $gold-light: #ba9f61;
 $primary: #c1ad8b;
 
 $link: white;
-
+$table-color: $gold;
 $title-color: $gold-light;
 $title-weight: 300;
 $subtitle-color: $gold-light;
@@ -102,4 +102,11 @@ p {
 
 #cookie-warning.is-invisible {
   display: none;
+}
+
+table.table thead {
+  td, th{
+    color: $gold;
+    font-weight: 600;
+  }
 }
