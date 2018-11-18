@@ -48,8 +48,12 @@ body {
 }
 
 a {
-  &.maill:after {
-  content: "\0040" attr(data-domain);
+  &.maill{
+    color: $gold;
+
+    &:after {
+      content: "\0040" attr(data-domain);
+    }
   }
 }
 
