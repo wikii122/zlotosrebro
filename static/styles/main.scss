@@ -4,19 +4,23 @@
 }
 
 @font-face {
-  font-family: Garamond sans-serif;
-  src: url("../fonts/GARA.TTF");
+  font-family: Garamond;
+  src: url("/fonts/garamound.ttf");
 }
 
 @import "../../node_modules/reset.css/reset";
 @import "../../node_modules/bulma/sass/utilities/functions";
+
+$desktop: 800px;
+$widescreen: 960px;
+$fullhd: 1192px;
 
 $gold: #826d44;
 $gold-light: #ba9f61;
 
 $primary: #c1ad8b;
 
-$link: white;
+$link: $gold;
 $table-color: $gold;
 $title-color: $gold-light;
 $title-weight: 300;
@@ -49,8 +53,6 @@ body {
 
 a {
   &.maill{
-    color: $gold;
-
     &:after {
       content: "\0040" attr(data-domain);
     }
@@ -61,6 +63,7 @@ header {
   font-family: Libertine;
 
   a {
+    color: white;
     transition: all 0.5s ease-in;
 
     &:hover, &:focus {
@@ -87,12 +90,12 @@ header {
   img {
     width: 100%;
   }
+}
 
-  ul.is-narrow {
-    &:before, &:after {
-      content: " ";
-      flex-grow: 3;
-    }
+.is-narrow {
+  &:before, &:after {
+    content: " ";
+    flex-grow: 3;
   }
 }
 
