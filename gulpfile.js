@@ -29,11 +29,11 @@ function compileScss() {
 }
 
 function watchStaticFiles() {
-  return gulp.watch(['./static/*.html', 'static/fonts', 'static/img', 'static/lib/**/*.js'], staticFiles)
+  return gulp.watch(['./static/*.html', './static/fonts/**', './static/img/**', './static/**/*.js'], staticFiles)
 }
 
 function watchScss() {
-  return gulp.watch('./dist/**/*.scss', compileScss);
+  return gulp.watch('./static/**/*.scss', compileScss);
 }
 
 function refreshBrowser() {
