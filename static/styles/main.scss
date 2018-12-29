@@ -11,9 +11,7 @@
 @import "../../node_modules/reset.css/reset";
 @import "../../node_modules/bulma/sass/utilities/functions";
 
-$desktop: 800px;
-$widescreen: 960px;
-$fullhd: 1192px;
+$fullhd-enabled: false;
 
 $gold: #826d44;
 $gold-light: #ba9f61;
@@ -89,6 +87,12 @@ header {
 
   img {
     width: 100%;
+  }
+}
+
+@include desktop {
+  li.is-separator:before {
+    content: '•';
   }
 }
 
