@@ -93,8 +93,13 @@ header {
 }
 
 @include desktop {
-  li.is-separator:before {
-    content: '•';
+  li.is-separator {
+    flex-grow: 0 !important;
+
+    &:before {
+      content: '•';
+      font-size: 1rem;
+    }
   }
 }
 
