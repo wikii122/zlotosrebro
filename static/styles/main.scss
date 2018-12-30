@@ -115,11 +115,23 @@ p {
 }
 
 #cookie-warning {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  margin: 35px;
-  z-index: 2;
+  @include desktop {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin: 35px;
+    z-index: 2;
+  }
+
+  @include touch {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    width: 100%;
+    z-index: 2;
+  }
+
   .is-invisible {
     display: none;
   }
