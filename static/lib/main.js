@@ -1,10 +1,14 @@
 void function() {
     function prepareWarning() {
+        const warning = document.getElementById("cookie-warning");
+
+        if (!navigator.cookieEnabled) {
+            warning.classList.add("is-invisible");
+        }
+
         const name = "visited";
         const str = '; '+ document.cookie +';';
         const index = str.indexOf('; '+ escape(name) +'=');
-
-        const warning = document.getElementById("cookie-warning");
 
         function hideWarning() {
             const expire = new Date();
