@@ -22,6 +22,12 @@ function html() {
     .pipe(gulp.dest('./dist'));
 }
 
+function statics() {
+  return gulp.src('./static/root/*')
+    .pipe(gulp.dest('./dist'));
+
+}
+
 function compileScss() {
   return gulp.src('./static/styles/main.scss')
     .pipe(sass())
@@ -43,7 +49,7 @@ function refreshBrowser() {
     }
   });
 }
-const staticFiles = gulp.parallel(html, fonts, images);
+const staticFiles = gulp.parallel(statics, html, fonts, images);
 const build = gulp.parallel(compileScss, staticFiles);
 
 exports.default = build;
