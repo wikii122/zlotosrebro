@@ -1,23 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://zloto-srebro.waw.pl/</loc>
+<loc>http://www.zloto-srebro.waw.pl/</loc>
 <priority>1.00 </priority>
 <changefreq>monthly</changefreq>
 </url>
 <url>
-<loc>http://zloto-srebro.waw.pl/about.html</loc>
+<loc>http://www.zloto-srebro.waw.pl/about.html</loc>
 <priority>0.80 </priority>
 <changefreq>monthly</changefreq>
 </url>
 <url>
-<loc>http://zloto-srebro.waw.pl/prices.html</loc>
+<loc>http://www.zloto-srebro.waw.pl/prices.html</loc>
 <priority>0.80 </priority>
 <changefreq>monthly</changefreq>
 </url>
 <url>
-<loc>http://zloto-srebro.waw.pl/contact.html</loc>
+<loc>http://www.zloto-srebro.waw.pl/contact.html</loc>
 <priority>0.80 </priority>
+<changefreq>monthly</changefreq>
+</url>
+<url>
+<loc>http://www.zloto-srebro.waw.pl/privacy.html</loc>
+<priority>0.20 </priority>
 <changefreq>monthly</changefreq>
 </url>
 </urlset>
