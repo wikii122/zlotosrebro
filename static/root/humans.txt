@@ -1,0 +1,20 @@
+/* TEAM */
+    Developer: Wiktor Ślęczka
+    Contact: wiktor [dot] sleczka [at] gmail
+    Site: https://wiktorsleczka.com
+    Location: Warsaw, Poland
+
+    Designer: Patrycja Marciniak
+    Contact: patrycja [dot] m [dot] marciniak [at] gmail
+    Location: Warsaw, Poland
+
+/* SITE */
+    Last update: 2019/04/11
+    Doctype: HTML5
+    Language: Polish
+    Tools: Gulp, Bulma
+       
+                            
+
+
+                    
