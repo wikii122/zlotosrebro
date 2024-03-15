@@ -1,6 +1,6 @@
 const del = require('del');
 const gulp = require('gulp');
-const sass = require('gulp-sass');
+const sass = require('gulp-sass')(require('node-sass'));
 const browserSync = require('browser-sync').create();
 
 function clean() {
